@@ -6,3 +6,13 @@ Content-Type: application/json
     "details": "mutcha doidera",
     "maximumAttendees": 20
 }
+
+###
+
+POST http://localhost:3333/events/5f0353fb-d0c9-45a6-b1db-125fdef36b8b/attendees
+Content-Type: application/json
+
+{
+    "name": "Bernardo Alves",
+    "email": "bernardoalves330@gmail.com"
+}
