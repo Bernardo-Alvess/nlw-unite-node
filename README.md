@@ -39,7 +39,7 @@ Para documentação da API, acesse o link: https://nlw-unite-nodejs.onrender.com
 
 <h2>Comandos de Execução</h2>
 
-## Seed
+### Seed
 
 Para seedar o banco de dados com pelo menos um evento
 
@@ -47,13 +47,13 @@ Para seedar o banco de dados com pelo menos um evento
 npx prisma seed
 ```
 
-## Executar API em modo de desenvolvimento
+### Executar API em modo de desenvolvimento
 
 ```
 npm run dev
 ```
 
-## Para buildar e executar a API
+### Para buildar e executar a API
 
 ```
 npm run build
@@ -66,11 +66,11 @@ O ```npm run build``` utiliza do módulo tsup para buildar o projeto e converte-
 
 Essa API utiliza da Prisma ORM para facilitar a conexão e querys com o banco de dados
 
-## Para commitar as mudanças feitas
+### Para commitar as mudanças feitas
 
 ```db:migrate```
 
-## Para abrir o prisma studio
+### Para abrir o prisma studio
 
 ```db:studio```
 <!-- ## Banco de dados
