@@ -8,38 +8,74 @@ Os participantes inscritos podem emitir uma credencial para check-in no dia do e
 
 O sistema fará um scan da credencial do participante para permitir a entrada no evento.
 
+<h2>Tecnologias Usadas</h2>
+
+[![Built with](https://skillicons.dev/icons?i=nodejs,ts,prisma&theme=dark)](https://skillicons.dev)
+
 ## Requisitos
 
 ### Requisitos funcionais
 
 - [x] O organizador deve poder cadastrar um novo evento;
-- [] O organizador deve poder visualizar dados de um evento;
-- [] O organizador deve poser visualizar a lista de participantes; 
+- [x] O organizador deve poder visualizar dados de um evento;
+- [x] O organizador deve poser visualizar a lista de participantes; 
 - [x] O participante deve poder se inscrever em um evento;
-- [] O participante deve poder visualizar seu crachá de inscrição;
-- [] O participante deve poder realizar check-in no evento;
+- [x] O participante deve poder visualizar seu crachá de inscrição;
+- [x] O participante deve poder realizar check-in no evento;
 
 ### Regras de negócio
 
 - [x] O participante só pode se inscrever em um evento uma única vez;
 - [x] O participante só pode se inscrever em eventos com vagas disponíveis;
-- [] O participante só pode realizar check-in em um evento uma única vez;
+- [x] O participante só pode realizar check-in em um evento uma única vez;
 
 ### Requisitos não-funcionais
 
-- [] O check-in no evento será realizado através de um QRCode;
+- [x] O check-in no evento será realizado através de um QRCode;
 
 ## Documentação da API (Swagger)
 
 Para documentação da API, acesse o link: https://nlw-unite-nodejs.onrender.com/docs
 
-## Banco de dados
+<h2>Comandos de Execução</h2>
+
+## Seed
+
+Para seedar o banco de dados com pelo menos um evento
+
+```
+npx prisma seed
+```
+
+## Executar API em modo de desenvolvimento
+
+```
+npm run dev
+```
+
+## Para buildar e executar a API
+
+```
+npm run build
+npm start
+```
+
+O ```npm run build``` utiliza do módulo tsup para buildar o projeto e converte-lo de TS para JS
+
+<h2>Comandos da database</h2>
+
+Essa API utiliza da Prisma ORM para facilitar a conexão e querys com o banco de dados
+
+## Para commitar as mudanças feitas
+
+```db:migrate```
+
+## Para abrir o prisma studio
+
+```db:studio```
+<!-- ## Banco de dados
 
 Nessa aplicação vamos utilizar banco de dados relacional (SQL). Para ambiente de desenvolvimento seguiremos com o SQLite pela facilidade do ambiente.
-
-### Diagrama ERD
-
-<img src=".github/erd.svg" width="600" alt="Diagrama ERD do banco de dados" />
 
 ### Estrutura do banco (SQL)
 
@@ -79,4 +115,4 @@ CREATE UNIQUE INDEX "attendees_event_id_email_key" ON "attendees"("event_id", "e
 
 -- CreateIndex
 CREATE UNIQUE INDEX "check_ins_attendeeId_key" ON "check_ins"("attendeeId");
-```
+``` -->
