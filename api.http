@@ -2,17 +2,23 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-    "title": "evento eventoso",
-    "details": "mutcha doidera",
-    "maximumAttendees": 20
+    "title": "evento sem ngm",
+    "details": null,
+    "maximumAttendees": null
 }
 
 ###
 
-POST http://localhost:3333/events/5f0353fb-d0c9-45a6-b1db-125fdef36b8b/attendees
+POST http://localhost:3333/events/f3ad03d6-2b28-4e71-8bdf-4cc4c4e55996/attendees
 Content-Type: application/json
 
 {
     "name": "Bernardo Alves",
-    "email": "bernardoalves330@gmail.com"
+    "email": "bernardoal3ves33330@gmail.com"
 }
+
+###
+GET http://localhost:3333/events/5bfe0e16-f598-4da2-a6f0-f987689553fc
+
+###
+GET http://localhost:3333/attendees/2/badge
