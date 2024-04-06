@@ -2,27 +2,27 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-    "title": "meu aniversario",
+    "title": "meu fff",
     "details": null,
     "maximumAttendees": null
 }
 
 ###
 
-POST http://localhost:3333/events/456b55b3-1230-4b5b-9113-ec4a280ba19f/attendees
+POST http://localhost:3333/events/9db470fd-317f-4507-9f05-82b728dca5eb/attendees
 Content-Type: application/json
 
 {
-    "name": "Julia Kniest",
+    "name": "Julaa Kniest",
     "email": "jk@gmail.com"
 }
 
 ###
-GET http://localhost:3333/events/5bfe0e16-f598-4da2-a6f0-f987689553fc
+GET http://localhost:3333/events/9db470fd-317f-4507-9f05-82b728dca5eb
 
 ###
-GET http://localhost:3333/attendees/10/check-in
+GET http://localhost:3333/attendees/13/check-in
 
 ###
 
-GET http://localhost:3333/events/456b55b3-1230-4b5b-9113-ec4a280ba19f/attendees
+GET http://localhost:3333/events/9db470fd-317f-4507-9f05-82b728dca5eb/attendees
